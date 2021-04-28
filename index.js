@@ -22,7 +22,7 @@ function reduceToTotal(sourceArray, startingPoint = 0){
 
 function reduceToAllTrue(sourceArray){
 
-    const reducer = function(accumulator, currentValue){  
+    const reducer = function(accumulator, currentValue){
         if(!!accumulator == true && !!currentValue == true){
             return true;
         } else {
@@ -33,12 +33,12 @@ function reduceToAllTrue(sourceArray){
 }
 
 function reduceToAnyTrue(sourceArray){
-    const reducer = function(accumulator, currentValue){  
+    const reducer = function(accumulator, currentValue){
         if(accumulator == true){
             return true
         } else {
             return !!currentValue
-        } 
+        }
     }
     return sourceArray.reduce(reducer, false)
 }// Your code here
